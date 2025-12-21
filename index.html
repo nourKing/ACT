@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الاختبارات الجامعية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎓 موقع الاختبارات الجامعية</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="exams.html">الاختبارات</a></li>
+                    <li><a href="admin.html">إدارة الأسئلة</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>مرحباً بك في منصة الاختبارات الجامعية</h2>
+            <p>منصة شاملة لإجراء الاختبارات وإدارة الأسئلة الجامعية</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="icon">📝</div>
+                <h3>إجراء الاختبارات</h3>
+                <p>قم بإجراء الاختبارات بسهولة واحصل على النتائج فوراً</p>
+                <a href="exams.html" class="btn">ابدأ الاختبار</a>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">📊</div>
+                <h3>عرض النتائج</h3>
+                <p>شاهد نتائجك ودرجاتك في جميع الاختبارات</p>
+                <a href="#results" class="btn">النتائج</a>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">⚙️</div>
+                <h3>إدارة الأسئلة</h3>
+                <p>أضف وعدل أسئلة الاختبارات بسهولة</p>
+                <a href="admin.html" class="btn">الإدارة</a>
+            </div>
+        </section>
+
+        <section class="stats" id="results">
+            <h2>آخر النتائج</h2>
+            <div id="recent-results">
+                <p class="no-data">لا توجد نتائج بعد. قم بإجراء اختبار أولاً!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 موقع الاختبارات الجامعية - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

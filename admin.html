@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة الأسئلة - موقع الاختبارات الجامعية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎓 موقع الاختبارات الجامعية</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="exams.html">الاختبارات</a></li>
+                    <li><a href="admin.html" class="active">إدارة الأسئلة</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="admin-section">
+            <h2>إدارة الأسئلة</h2>
+            
+            <div class="admin-panel">
+                <div class="add-question-form">
+                    <h3>إضافة سؤال جديد</h3>
+                    <form id="question-form">
+                        <div class="form-group">
+                            <label for="question-text">نص السؤال:</label>
+                            <textarea id="question-text" required rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="option1">الخيار الأول:</label>
+                            <input type="text" id="option1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="option2">الخيار الثاني:</label>
+                            <input type="text" id="option2" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="option3">الخيار الثالث:</label>
+                            <input type="text" id="option3" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="option4">الخيار الرابع:</label>
+                            <input type="text" id="option4" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correct-answer">الإجابة الصحيحة:</label>
+                            <select id="correct-answer" required>
+                                <option value="">اختر الإجابة الصحيحة</option>
+                                <option value="0">الخيار الأول</option>
+                                <option value="1">الخيار الثاني</option>
+                                <option value="2">الخيار الثالث</option>
+                                <option value="3">الخيار الرابع</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">إضافة السؤال</button>
+                    </form>
+                </div>
+
+                <div class="questions-list">
+                    <h3>الأسئلة الموجودة (<span id="total-questions">0</span>)</h3>
+                    <div id="questions-container">
+                        <!-- Questions will be listed here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 موقع الاختبارات الجامعية - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
