@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاختبارات - موقع الاختبارات الجامعية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎓 موقع الاختبارات الجامعية</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="exams.html" class="active">الاختبارات</a></li>
+                    <li><a href="admin.html">إدارة الأسئلة</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="exam-section">
+            <h2>اختبار العلوم الحاسوبية</h2>
+            <div class="exam-info">
+                <p>عدد الأسئلة: <span id="question-count">0</span></p>
+                <p>الوقت المتبقي: <span id="timer">--:--</span></p>
+            </div>
+
+            <div id="exam-container">
+                <div id="question-area">
+                    <!-- Questions will be loaded here -->
+                </div>
+
+                <div class="exam-controls">
+                    <button id="prev-btn" class="btn" style="display: none;">السؤال السابق</button>
+                    <button id="next-btn" class="btn">السؤال التالي</button>
+                    <button id="submit-btn" class="btn btn-success" style="display: none;">إنهاء الاختبار</button>
+                </div>
+            </div>
+
+            <div id="results-container" style="display: none;">
+                <h2>نتائج الاختبار</h2>
+                <div class="results-box">
+                    <div class="result-item">
+                        <span>الدرجة:</span>
+                        <span id="score" class="score-value">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>عدد الإجابات الصحيحة:</span>
+                        <span id="correct-answers">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>عدد الإجابات الخاطئة:</span>
+                        <span id="wrong-answers">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>النسبة المئوية:</span>
+                        <span id="percentage">0%</span>
+                    </div>
+                </div>
+                <div class="result-actions">
+                    <button onclick="location.reload()" class="btn">إعادة الاختبار</button>
+                    <a href="index.html" class="btn">العودة للرئيسية</a>
+                </div>
+                
+                <div id="answers-review">
+                    <h3>مراجعة الإجابات</h3>
+                    <div id="review-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 موقع الاختبارات الجامعية - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="exam.js"></script>
+</body>
+</html>
