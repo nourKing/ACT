@@ -102,7 +102,7 @@ function displayQuestion() {
         html += `
             <div class="option ${isSelected ? 'selected' : ''}" data-index="${index}">
                 <label style="cursor: pointer; display: block;">
-                    <input type="radio" name="answer" value="${index}" ${isSelected ? 'checked' : ''} style="margin-left: 10px;">
+                    <input type="radio" name="answer" value="${index}" ${isSelected ? 'checked' : ''} style="margin-right: 10px;">
                     ${option}
                 </label>
             </div>

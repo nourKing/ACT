@@ -27,7 +27,7 @@ function addQuestion() {
     const option4 = document.getElementById('option4').value.trim();
     const correctAnswer = parseInt(document.getElementById('correct-answer').value);
     
-    if (!questionText || !option1 || !option2 || !option3 || !option4 || correctAnswer === '') {
+    if (!questionText || !option1 || !option2 || !option3 || !option4 || isNaN(correctAnswer) || correctAnswer < 0 || correctAnswer > 3) {
         alert('يرجى ملء جميع الحقول');
         return;
     }
